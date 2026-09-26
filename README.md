@@ -124,7 +124,7 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Each module has its own job, so the PotteryWheel module only handles making pottery with the makePottery function. Keeping it to one job prevents everything else from getting muddled inside of it.It helps coders use the debugger to find which specific file has an error or needs a change, rather than going through one page of code with multiple functions.For example, if the shop changed the cracking temperature from 2200 to 2400, I would only need to edit Kiln.js, and the pottery wheel, catalog, and list would keep working without being touched.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
    > Your answer here
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
