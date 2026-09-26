@@ -1,4 +1,5 @@
 import { makePottery } from "./PotteryWheel.js"
+import { firePottery } from "./Kiln.js"
 let mug = makePottery("Mug", 1, 3)
 console.log(mug)
 
@@ -19,6 +20,22 @@ console.log(flat)
 
 
 // Fire each piece of pottery in the kiln
+let firedMug = firePottery(mug, 2000)
+console.log(firedMug)
+
+let firedOval = firePottery(oval, 1000)
+console.log(firedOval)
+
+let firedRound = firePottery(round, 3000)
+console.log(firedRound)
+
+
+let firedSquare = firePottery(square, 5000)
+console.log(firedSquare)
+
+
+let firedFlat = firePottery(flat, 5000)
+console.log(firedFlat)
 
 
 // Determine which ones should be sold, and their price
